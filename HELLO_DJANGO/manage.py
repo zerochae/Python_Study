@@ -3,6 +3,8 @@
 import os
 import sys
 
+from django.http.response import HttpResponseForbidden
+
 
 def main():
     """Run administrative tasks."""
@@ -19,3 +21,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
