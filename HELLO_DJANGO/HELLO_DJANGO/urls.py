@@ -22,4 +22,5 @@ urlpatterns = [
     # path('',myapp.views.home, name='index'),
     # path('',myapp.views.home, name='home'),
     path('myforward', myapp.views.myforward, name='myforword' ),
+    path('emp_list',myapp.views.DaoEmp)
 ]
