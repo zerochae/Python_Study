@@ -4,3 +4,875 @@
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2021-10-13 12:05:15.589
 !MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
+
+!ENTRY org.eclipse.core.resources 2 2 2021-10-13 13:36:20.125
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-10-13 13:36:20.127
+!MESSAGE The project description file (.project) for '.org.eclipse.egit.core.cmp' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:40:24.475
+!MESSAGE Python not configured.
+!STACK 0
+org.python.pydev.core.NotConfiguredInterpreterException: Python not configured.
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getDefaultInterpreterInfo(AbstractInterpreterManager.java:247)
+	at org.python.pydev.plugin.nature.PythonNature.getProjectInterpreter(PythonNature.java:1364)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:520)
+	at org.python.pydev.plugin.nature.PythonPathNature.getVariableSubstitution(PythonPathNature.java:503)
+	at org.python.pydev.core.docutils.StringSubstitution.<init>(StringSubstitution.java:57)
+	at org.python.pydev.plugin.nature.PythonPathNature.getOnlyProjectPythonPathStr(PythonPathNature.java:166)
+	at org.python.pydev.plugin.nature.PythonNature$RebuildPythonNatureModules.run(PythonNature.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:40:24.508
+!MESSAGE Info: Rebuilding internal caches: C:\Users\zeroc\git\Python_Study\.metadata\.plugins\org.eclipse.core.resources\.projects\HELLO_SAWON\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:40:59.716
+!MESSAGE class [J cannot be cast to class [I ([J and [I are in module java.base of loader 'bootstrap')
+!STACK 0
+java.lang.ClassCastException: class [J cannot be cast to class [I ([J and [I are in module java.base of loader 'bootstrap')
+	at at.jta.Regor._openKey(Regor.java:1376)
+	at at.jta.Regor.openKey(Regor.java:1341)
+	at org.python.pydev.ui.pythonpathconf.PythonInterpreterProviderFactory.getInterpreterProviders(PythonInterpreterProviderFactory.java:59)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker$3.run(AutoConfigMaker.java:482)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.getAllProviders(AutoConfigMaker.java:479)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.getPossibleInterpreters(AutoConfigMaker.java:464)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.autoConfigSearch(AutoConfigMaker.java:204)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor.getNewInputObject(AbstractInterpreterEditor.java:1002)
+	at org.python.copiedfromeclipsesrc.PythonListEditor.addPressed(PythonListEditor.java:159)
+	at org.python.copiedfromeclipsesrc.PythonListEditor$2.widgetSelected(PythonListEditor.java:341)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4237)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4237)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.python.pydev.shared_core 1 1 2021-10-13 13:41:00.066
+!MESSAGE - Ok, file is non-null. Getting info on:C:\anaconda3\python.exe
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  C:\anaconda3\python.exe -u C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\interpreterInfo.py
+- Setting task name:Making pythonpath environment... C:\anaconda3\python.exe -u C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\interpreterInfo.py
+- Setting task name:Making exec... C:\anaconda3\python.exe -u C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.8</version>
+<executable>C:\anaconda3\python.exe</executable>
+<lib>C:\anaconda3\DLLs</lib>
+<lib>C:\anaconda3\lib</lib>
+<lib>C:\anaconda3</lib>
+<lib>C:\anaconda3\lib\site-packages</lib>
+<lib>C:\anaconda3\lib\site-packages\locket-0.2.1-py3.8.egg</lib>
+<lib>C:\anaconda3\lib\site-packages\win32</lib>
+<lib>C:\anaconda3\lib\site-packages\win32\lib</lib>
+<lib>C:\anaconda3\lib\site-packages\Pythonwin</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_contextvars</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_opcode</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_statistics</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winapi</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>_xxsubinterpreters</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>astropy</forced_lib>
+<forced_lib>astropy.units</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>py</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>random</forced_lib>
+<forced_lib>re</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>werkzeug</forced_lib>
+<forced_lib>winreg</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>38</value></string_substitution_var>
+</xml>
+
+!STACK 0
+java.lang.RuntimeException: - Ok, file is non-null. Getting info on:C:\anaconda3\python.exe
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  C:\anaconda3\python.exe -u C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\interpreterInfo.py
+- Setting task name:Making pythonpath environment... C:\anaconda3\python.exe -u C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\interpreterInfo.py
+- Setting task name:Making exec... C:\anaconda3\python.exe -u C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.8</version>
+<executable>C:\anaconda3\python.exe</executable>
+<lib>C:\anaconda3\DLLs</lib>
+<lib>C:\anaconda3\lib</lib>
+<lib>C:\anaconda3</lib>
+<lib>C:\anaconda3\lib\site-packages</lib>
+<lib>C:\anaconda3\lib\site-packages\locket-0.2.1-py3.8.egg</lib>
+<lib>C:\anaconda3\lib\site-packages\win32</lib>
+<lib>C:\anaconda3\lib\site-packages\win32\lib</lib>
+<lib>C:\anaconda3\lib\site-packages\Pythonwin</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_contextvars</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_opcode</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_statistics</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winapi</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>_xxsubinterpreters</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>astropy</forced_lib>
+<forced_lib>astropy.units</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>py</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>random</forced_lib>
+<forced_lib>re</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>werkzeug</forced_lib>
+<forced_lib>winreg</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>38</value></string_substitution_var>
+</xml>
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor.getNewInputObject(AbstractInterpreterEditor.java:1051)
+	at org.python.copiedfromeclipsesrc.PythonListEditor.addPressed(PythonListEditor.java:159)
+	at org.python.copiedfromeclipsesrc.PythonListEditor$2.widgetSelected(PythonListEditor.java:341)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4237)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4237)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.python.pydev.shared_core 1 1 2021-10-13 13:41:01.633
+!MESSAGE Restoring info for: C:\anaconda3\python.exe
+!STACK 0
+java.lang.RuntimeException: Restoring info for: C:\anaconda3\python.exe
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:461)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:287)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:584)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Expecting: C:\Users\zeroc\git\Python_Study\.metadata\.plugins\org.python.pydev\v1_e3a239y3zvbki09wz1dt4k828\modulesKeys to exist (and be a file).
+	at org.python.pydev.ast.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:330)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:443)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:459)
+	... 4 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2021-10-13 13:41:12.319
+!MESSAGE Finished restoring information for: C:\anaconda3\python.exe at: C:\Users\zeroc\git\Python_Study\.metadata\.plugins\org.python.pydev\v1_e3a239y3zvbki09wz1dt4k828
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: C:\anaconda3\python.exe at: C:\Users\zeroc\git\Python_Study\.metadata\.plugins\org.python.pydev\v1_e3a239y3zvbki09wz1dt4k828
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:506)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:287)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:584)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:41:18.642
+!MESSAGE Info: Rebuilding internal caches: C:\Users\zeroc\git\Python_Study\.metadata\.plugins\com.python.pydev.analysis\python_v1_e3a239y3zvbki09wz1dt4k828\python.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:43:03.187
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 271).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 271).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:170)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:139)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:186)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:43:03.207
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 277).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 277).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:170)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:139)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:186)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:43:03.208
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 278).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 278).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:170)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:139)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:186)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:43:03.209
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 286).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 286).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:170)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:139)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:186)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:43:03.210
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 294).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 294).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:170)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:139)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:186)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:43:03.210
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 299).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 299).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:170)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:139)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:186)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:43:03.211
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 303).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 303).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:170)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:139)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:186)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:46:06.355
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 271).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 271).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:46:06.384
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 277).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 277).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:46:06.385
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 278).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 278).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:46:06.385
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 286).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 286).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:46:06.386
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 294).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 294).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:46:06.386
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 299).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 299).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:46:06.387
+!MESSAGE Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 303).
+!STACK 0
+java.lang.RuntimeException: Did not expect to find item below node: Assign[targets=[Name[id=auth_data, ctx=Store, reserved=false]], value=null, type=null] (module: connection.py file: C:\anaconda3\Lib\site-packages\mysql\connector\connection.py row: 303).
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.endScopesInStack(FastDefinitionsParser.java:631)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.handleNewLine(FastDefinitionsParser.java:415)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.extractBody(FastDefinitionsParser.java:259)
+	at org.python.pydev.parser.fastparser.FastDefinitionsParser.parse(FastDefinitionsParser.java:698)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:327)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:264)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:194)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:36)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:668)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:586)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1192)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:47:28.023
+!MESSAGE ERROR reading shell. Message sent: @@IMPORTS:astropy.convolution._convolve
+END@@
+
+ProcessInfo:
+
+ - Executed: C:\anaconda3\python.exe -u C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\pycompletionserver.py 61699
+
+ - Environment:
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\zeroc\AppData\Roaming
+CHOCOLATEYINSTALL=C:\ProgramData\chocolatey
+CHOCOLATEYLASTPATHUPDATE=132784039365329265
+COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+COMMONPROGRAMW6432=C:\Program Files\Common Files
+COMPUTERNAME=ZEROCHAE
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+CONFIGSETROOT=C:\WINDOWS\ConfigSetRoot
+DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+HOMEDRIVE=C:
+HOMEPATH=\Users\zeroc
+JAVA_HOME=C:\Program Files\Java\jdk-16.0.1
+LOCALAPPDATA=C:\Users\zeroc\AppData\Local
+LOGONSERVER=\\ZEROCHAE
+NPM=C:\Program Files\nodejs
+NUMBER_OF_PROCESSORS=4
+ONEDRIVE=C:\Users\zeroc\OneDrive
+ONEDRIVECONSUMER=C:\Users\zeroc\OneDrive
+OS=Windows_NT
+PATH=C:/Users/zeroc/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin/server;C:/Users/zeroc/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\NAT Service;C:\app\zeroc\product\18.0.0\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Ruby30-x64\bin;C:\anaconda3;C:\anaconda3\Library\mingw-w64\bin;C:\anaconda3\Library\usr\bin;C:\anaconda3\Library\bin;C:\anaconda3\Scripts;C:\Python39\Scripts\;C:\Python39\;C:\Users\zeroc\AppData\Local\Microsoft\WindowsApps;C:\Users\zeroc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\zeroc\AppData\Roaming\npm;C:\WINDOWS\System32;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+PROCESSOR_LEVEL=23
+PROCESSOR_REVISION=6001
+PROGRAMDATA=C:\ProgramData
+PROGRAMFILES(X86)=C:\Program Files (x86)
+PROGRAMFILES=C:\Program Files
+PROGRAMW6432=C:\Program Files
+PROMPT=$P$G
+PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+PYTHONPATH=C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\pydev_sitecustomize;C:\anaconda3\DLLs;C:\anaconda3\lib;C:\anaconda3;C:\anaconda3\lib\site-packages;C:\anaconda3\lib\site-packages\locket-0.2.1-py3.8.egg;C:\anaconda3\lib\site-packages\win32;C:\anaconda3\lib\site-packages\win32\lib;C:\anaconda3\lib\site-packages\Pythonwin
+SESSIONNAME=Console
+SYSTEMDRIVE=C:
+SYSTEMROOT=C:\WINDOWS
+TEMP=C:\Users\zeroc\AppData\Local\Temp
+TMP=C:\Users\zeroc\AppData\Local\Temp
+USERDOMAIN=ZEROCHAE
+USERDOMAIN_ROAMINGPROFILE=ZEROCHAE
+USERNAME=zeroc
+USERPROFILE=C:\Users\zeroc
+WINDIR=C:\WINDOWS
+
+ - Working Dir:
+C:\Users\zeroc\eclipse\jee-2021-09\eclipse\..\..\..\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc
+
+ - OS:
+Windows 10
+
+ - Std output:
+
+
+ - Err output:
+
+!STACK 0
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.SocketChannelImpl.timedRead(SocketChannelImpl.java:1229)
+	at java.base/sun.nio.ch.SocketChannelImpl.blockingRead(SocketChannelImpl.java:1276)
+	at java.base/sun.nio.ch.SocketAdaptor$1.read(SocketAdaptor.java:191)
+	at java.base/java.io.InputStream.read(InputStream.java:218)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.read(AbstractShell.java:457)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.read(AbstractShell.java:515)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:710)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:702)
+	at org.python.pydev.ast.codecompletion.shell.CompletionsShell.getImportCompletions(CompletionsShell.java:63)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:378)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:363)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:416)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:259)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:160)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:86)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SyncSystemModulesManager.java:392)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-10-13 13:47:35.524
+!MESSAGE ERROR reading shell. Message sent: @@IMPORTS:astropy.time._parse_times
+END@@
+
+ProcessInfo:
+
+ - Executed: C:\anaconda3\python.exe -u C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\pycompletionserver.py 61705
+
+ - Environment:
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\zeroc\AppData\Roaming
+CHOCOLATEYINSTALL=C:\ProgramData\chocolatey
+CHOCOLATEYLASTPATHUPDATE=132784039365329265
+COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+COMMONPROGRAMW6432=C:\Program Files\Common Files
+COMPUTERNAME=ZEROCHAE
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+CONFIGSETROOT=C:\WINDOWS\ConfigSetRoot
+DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+HOMEDRIVE=C:
+HOMEPATH=\Users\zeroc
+JAVA_HOME=C:\Program Files\Java\jdk-16.0.1
+LOCALAPPDATA=C:\Users\zeroc\AppData\Local
+LOGONSERVER=\\ZEROCHAE
+NPM=C:\Program Files\nodejs
+NUMBER_OF_PROCESSORS=4
+ONEDRIVE=C:\Users\zeroc\OneDrive
+ONEDRIVECONSUMER=C:\Users\zeroc\OneDrive
+OS=Windows_NT
+PATH=C:/Users/zeroc/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin/server;C:/Users/zeroc/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\NAT Service;C:\app\zeroc\product\18.0.0\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Ruby30-x64\bin;C:\anaconda3;C:\anaconda3\Library\mingw-w64\bin;C:\anaconda3\Library\usr\bin;C:\anaconda3\Library\bin;C:\anaconda3\Scripts;C:\Python39\Scripts\;C:\Python39\;C:\Users\zeroc\AppData\Local\Microsoft\WindowsApps;C:\Users\zeroc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\zeroc\AppData\Roaming\npm;C:\WINDOWS\System32;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+PROCESSOR_LEVEL=23
+PROCESSOR_REVISION=6001
+PROGRAMDATA=C:\ProgramData
+PROGRAMFILES(X86)=C:\Program Files (x86)
+PROGRAMFILES=C:\Program Files
+PROGRAMW6432=C:\Program Files
+PROMPT=$P$G
+PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+PYTHONPATH=C:\Users\zeroc\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc\pydev_sitecustomize;C:\anaconda3\DLLs;C:\anaconda3\lib;C:\anaconda3;C:\anaconda3\lib\site-packages;C:\anaconda3\lib\site-packages\locket-0.2.1-py3.8.egg;C:\anaconda3\lib\site-packages\win32;C:\anaconda3\lib\site-packages\win32\lib;C:\anaconda3\lib\site-packages\Pythonwin
+SESSIONNAME=Console
+SYSTEMDRIVE=C:
+SYSTEMROOT=C:\WINDOWS
+TEMP=C:\Users\zeroc\AppData\Local\Temp
+TMP=C:\Users\zeroc\AppData\Local\Temp
+USERDOMAIN=ZEROCHAE
+USERDOMAIN_ROAMINGPROFILE=ZEROCHAE
+USERNAME=zeroc
+USERPROFILE=C:\Users\zeroc
+WINDIR=C:\WINDOWS
+
+ - Working Dir:
+C:\Users\zeroc\eclipse\jee-2021-09\eclipse\..\..\..\.p2\pool\plugins\org.python.pydev.core_9.1.0.202110031145\pysrc
+
+ - OS:
+Windows 10
+
+ - Std output:
+
+
+ - Err output:
+
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.blockingRead(SocketChannelImpl.java:1291)
+	at java.base/sun.nio.ch.SocketAdaptor$1.read(SocketAdaptor.java:191)
+	at java.base/java.io.InputStream.read(InputStream.java:218)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.read(AbstractShell.java:457)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.read(AbstractShell.java:515)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:710)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:702)
+	at org.python.pydev.ast.codecompletion.shell.CompletionsShell.getImportCompletions(CompletionsShell.java:63)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:378)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:363)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:416)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:259)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:160)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:86)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SyncSystemModulesManager.java:392)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
