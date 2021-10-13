@@ -48,6 +48,58 @@
             console.log("error:" + e.status);
           }
         });
+    }
+      function fn_update() {
+
+        var emp_id = $("#emp_id").val(emp_id);
+        var emp_name = $("#emp_name").val(emp_name);
+        var tel = $("#tel").val(tel);
+        var address = $("#address").val(address);
+
+        $.ajax({
+          type: "POST",
+          url: "insert.ajax",
+          data: { 
+                    emp_id : emp_id, 
+                    emp_name: emp_name, 
+                    tel : tel, 
+                    address : address 
+                },
+          dataType: "json",
+          success: function (result) {
+            console.log(result);
+          },
+          error: function (e) {
+            console.log("error:" + e.status);
+          }
+        });
+    }
+      function fn_delete() {
+
+        var emp_id = $("#emp_id").val(emp_id);
+        var emp_name = $("#emp_name").val(emp_name);
+        var tel = $("#tel").val(tel);
+        var address = $("#address").val(address);
+
+        $.ajax({
+          type: "POST",
+          url: "insert.ajax",
+          data: { 
+                    emp_id : emp_id, 
+                    emp_name: emp_name, 
+                    tel : tel, 
+                    address : address 
+                },
+          dataType: "json",
+          success: function (result) {
+            console.log(result);
+          },
+          error: function (e) {
+            console.log("error:" + e.status);
+          }
+        });
+
+
 
       }
     </script>
@@ -101,8 +153,8 @@
       <tr>
         <td colspan="2">
           <input type="button" value="추가" onclick="fn_insert()" />
-          <input type="button" value="수정" />
-          <input type="button" value="삭제" />
+          <input type="button" value="수정" onclick="fn_update()"/>
+          <input type="button" value="삭제" onclick="fn_delete()"/>
         </td>
       </tr>
     </table>

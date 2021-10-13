@@ -60,3 +60,33 @@ def insert_ajax(request):
     return JsonResponse(myjson)
 
 
+def update_ajax(request):
+
+    de = DaoEmp()
+    emp_id = request.POST['emp_id']
+    emp_name = request.POST['emp_name']
+    tel = request.POST['tel']
+    address = request.POST['address']
+    cnt = de.myupdate(emp_id,emp_name,tel,address)
+    msg = "ng"
+    if cnt > 0 :
+        msg = "ok"
+    print(cnt)
+    print(msg)
+    myjson = {'msg' : msg}
+    return JsonResponse(myjson)
+
+
+def delete_ajax(request):
+    de = DaoEmp()
+    emp_id = request.POST['emp_id']
+    cnt = de.mydelete(emp_id);
+    msg = "ng"
+    if cnt > 0 :
+        msg = "ok"
+    print(cnt)
+    print(msg)
+    myjson = {'msg' : msg}
+    return JsonResponse(myjson)
+
+
