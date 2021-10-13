@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Django CRUD</title>
+    <script src="static/jquery-3.6.0.js"></script>
     <script>
     
     function setData(emp_id,emp_name,tel,address){
-        var obj_emp_id = document.getElementById('emp_id');
-        var obj_emp_name = document.getElementById('emp_name');
-        var obj_tel = document.getElementById('tel');
-        var obj_address = document.getElementById('address');
+    //     var obj_emp_id = document.getElementById('emp_id');
+    //     var obj_emp_name = document.getElementById('emp_name');
+    //     var obj_tel = document.getElementById('tel');
+    //     var obj_address = document.getElementById('address');
 
-        obj_emp_id.value = emp_id;
-        obj_emp_name.value = emp_name;
-        obj_tel.value = tel;
-        obj_address.value = address;
+    //     obj_emp_id.value = emp_id;
+    //     obj_emp_name.value = emp_name;
+    //     obj_tel.value = tel;
+    //     obj_address.value = address;
+    $('#emp_id').val(emp_id);
     }
+
     
     </script>
 </head>
@@ -40,6 +42,7 @@
         {% for i in list %}
         <tr>
            <td><a href="javascript:setData('{{i.EMP_ID}}','{{i.EMP_NAME}}','{{i.TEL}}','{{i.ADDRESS}}')">{{i.EMP_ID}}</a></td>
+           <!-- <td>{{i.EMP_ID}}</td> -->
            <td>{{i.EMP_NAME}}</td>
            <td>{{i.TEL}}</td>
            <td>{{i.ADDRESS}}</td>
