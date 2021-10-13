@@ -50,7 +50,7 @@ def insert_ajax(request):
     emp_name = request.POST['emp_name']
     tel = request.POST['tel']
     address = request.POST['address']
-    cnt = de.myinsert(emp_id,emp_name,tel,address);
+    cnt = de.myinsert(emp_id,emp_name,tel,address)
     msg = "ng"
     if cnt > 0 :
         msg = "ok"

@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    {% load static %}
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    {% for i in list %}
-    {{i}} <br>
+
+    <script src="/static/jquery-3.6.0.js"></script>
+
+    <script>
+      function fn_insert() {
+        var s_name = $("#s_name").val();
+        var s_mobile = $("#s_mobile").val();
+        var dept_name = $("#dept_name").val();
+
+        $.ajax({
+          type: "POST",
+          url: "insert.ajax",
+          data: {
+            //  "csrfmiddlewaretoken": "\{\{ csrf_token \}\}",
+            s_name: s_name,
+            s_mobile: s_mobile,
+            dept_name: dept_name,
+          },
+          dataType: "json",
+          success: function (data) {
+            console.log(data);
+
+            // html = '<tr>';
+            //     html += '<td>'+data.이름+'</td>';
+            //     html += '<td>'+data.전화번호+'</td>';
+            //     html += '<td>'+data.부서+'</td>';
+            // html += '</tr>'
+
+            //     $('#sawonList').append(html)
+          },
+          error: function (xhr) {
+            console.log(xhr);
+          },
+        });
+      }
+      function fn_update() {
+        var s_id = $('#s_id').val()
+        var s_name = $("#s_name").val();
+        var s_mobile = $("#s_mobile").val();
+        var dept_name = $("#dept_name").val();
+
+        $.ajax({
+          type: "POST",
+          url: "update.ajax",
+          data: {
+            s_id: s_id,
+            s_name: s_name,
+            s_mobile: s_mobile,
+            dept_name: dept_name,
+          },
+          dataType: "json",
+          success: function (data) {
+            console.log(data);
+          },
+          error: function (xhr) {
+            console.log(xhr);
+          },
+        });
+      }
+
+      function fn_delete() {
+
+        var s_id = $('#s_id').val()
+
+        $.ajax({
+          type: "POST",
+          url: "delete.ajax",
+          data: {
+            s_id: s_id
+          },
+          dataType: "json",
+          success: function (data) {
+            console.log(data);
+          },
+          error: function (xhr) {
+            console.log(xhr);
+          },
+        });
+      }
+    </script>
+  </head>
+  <body>
+    {% for i in list %} {{i}} <br />
     {% endfor %}
-</body>
+
+    <table border="1" style="width: 300px; height: 250px">
+      <thead>
+        <tr>
+          <th>s_id</th>
+          <th>s_name</th>
+          <th>s_mobile</th>
+          <th>dept_name</th>
+        </tr>
+      </thead>
+      <tbody id="sawonList">
+        {% for i in list %}
+        <tr>
+          <td id="td_s_id">{{ i.s_id }}</td>
+          <td>{{ i.s_name }}</td>
+          <td>{{ i.s_mobile }}</td>
+          <td>{{ i.dept_name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <table>
+      <tr>
+        <td>사번</td>
+        <td><input type="text" id="s_id" /></td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td><input type="text" id="s_name" /></td>
+      </tr>
+      <tr>
+        <td>전화번호</td>
+        <td><input type="text" id="s_mobile" /></td>
+      </tr>
+      <tr>
+        <td>부서</td>
+        <td><input type="text" id="dept_name" /></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="button" value="추가" onclick="fn_insert()" />
+          <input type="button" value="수정" onclick="fn_update()" />
+          <input type="button" value="삭제" onclick="fn_delete()" />
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

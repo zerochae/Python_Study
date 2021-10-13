@@ -19,5 +19,8 @@ import myapp.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sawon_list', myapp.views.sawon_list, name='sawon_list')
+    path('sawon_list', myapp.views.sawon_list, name='sawon_list'),
+    path('insert.ajax', myapp.views.insert_ajax, name='insert.ajax'),
+    path('update.ajax', myapp.views.update_ajax, name='update.ajax'),
+    path('delete.ajax', myapp.views.delete_ajax, name='delete.ajax'),
 ]
