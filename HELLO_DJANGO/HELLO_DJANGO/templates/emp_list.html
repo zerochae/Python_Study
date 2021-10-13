@@ -1,81 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Django CRUD</title>
     <script src="static/jquery-3.6.0.js"></script>
     <script>
-    
-    function setData(emp_id,emp_name,tel,address){
-    //     var obj_emp_id = document.getElementById('emp_id');
-    //     var obj_emp_name = document.getElementById('emp_name');
-    //     var obj_tel = document.getElementById('tel');
-    //     var obj_address = document.getElementById('address');
 
-    //     obj_emp_id.value = emp_id;
-    //     obj_emp_name.value = emp_name;
-    //     obj_tel.value = tel;
-    //     obj_address.value = address;
-    $('#emp_id').val(emp_id);
-    }
+      function setData(emp_id, emp_name, tel, address) {
+        //     var obj_emp_id = document.getElementById('emp_id');
+        //     var obj_emp_name = document.getElementById('emp_name');
+        //     var obj_tel = document.getElementById('tel');
+        //     var obj_address = document.getElementById('address');
 
-    
+        //     obj_emp_id.value = emp_id;
+        //     obj_emp_name.value = emp_name;
+        //     obj_tel.value = tel;
+        //     obj_address.value = address;
+        $("#emp_id").val(emp_id);
+        $("#emp_name").val(emp_name);
+        $("#tel").val(tel);
+        $("#address").val(address);
+      }
+
+      function fn_insert() {
+
+        var emp_id = $("#emp_id").val(emp_id);
+        var emp_name = $("#emp_name").val(emp_name);
+        var tel = $("#tel").val(tel);
+        var address = $("#address").val(address);
+
+        $.ajax({
+          type: "POST",
+          url: "insert.ajax",
+          data: { 
+                    emp_id : emp_id, 
+                    emp_name: emp_name, 
+                    tel : tel, 
+                    address : address 
+                },
+          dataType: "json",
+          success: function (result) {
+            console.log(result);
+          },
+          error: function (e) {
+            console.log("error:" + e.status);
+          }
+        });
+
+      }
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- {% for i in list %}
     {{i}} <br>
     {% endfor %} -->
 
-    
-    <table border="1" style="width: 300px; height: 200px;">
-        <tr>
-           <th>emp_id</th>
-           <th>emp_name</th>
-           <th>tel</th>
-           <th>address</th>
-        </tr>
-        {% for i in list %}
-        <tr>
-           <td><a href="javascript:setData('{{i.EMP_ID}}','{{i.EMP_NAME}}','{{i.TEL}}','{{i.ADDRESS}}')">{{i.EMP_ID}}</a></td>
-           <!-- <td>{{i.EMP_ID}}</td> -->
-           <td>{{i.EMP_NAME}}</td>
-           <td>{{i.TEL}}</td>
-           <td>{{i.ADDRESS}}</td>
-        </tr>
-        {% endfor %}
-     </table>
+    <table border="1" style="width: 300px; height: 200px">
+      <tr>
+        <th>emp_id</th>
+        <th>emp_name</th>
+        <th>tel</th>
+        <th>address</th>
+      </tr>
+      {% for i in list %}
+      <tr>
+        <td>
+          <a
+            href="javascript:setData('{{i.emp_id}}','{{i.emp_name}}','{{i.tel}}','{{i.address}}')"
+            >{{i.emp_id}}</a
+          >
+        </td>
+        <!-- <td>{{i.EMP_ID}}</td> -->
+        <td>{{i.emp_name}}</td>
+        <td>{{i.tel}}</td>
+        <td>{{i.address}}</td>
+      </tr>
+      {% endfor %}
+    </table>
 
-     <table>
-         <tr>
-             <td>사번</td>
-             <td><input type="text" id="emp_id"></td>
-         </tr>
-         <tr>
-             <td>이름</td>
-             <td><input type="text" id="emp_name"></td>
-         </tr>
-         <tr>
-             <td>전화번호</td>
-             <td><input type="text" id="tel"></td>
-         </tr>
-         <tr>
-             <td>주소</td>
-             <td><input type="text" id="address"></td>
-         </tr>
-         <tr>
-             <td colspan="2">
-                 <input type="button" value="추가">
-                 <input type="button" value="수정">
-                 <input type="button" value="삭제">
-                </td>
-         </tr>
-
-     </table>
-
-</body>
+    <table>
+      <tr>
+        <td>사번</td>
+        <td><input type="text" id="emp_id" /></td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td><input type="text" id="emp_name" /></td>
+      </tr>
+      <tr>
+        <td>전화번호</td>
+        <td><input type="text" id="tel" /></td>
+      </tr>
+      <tr>
+        <td>주소</td>
+        <td><input type="text" id="address" /></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="button" value="추가" onclick="fn_insert()" />
+          <input type="button" value="수정" />
+          <input type="button" value="삭제" />
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

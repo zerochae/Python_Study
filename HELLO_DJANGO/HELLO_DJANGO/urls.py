@@ -25,4 +25,5 @@ urlpatterns = [
     # path('param2', views.param2, name='param2'),
     # path('myforward', views.myforward, name='myforward'),
     path('emp_list', views.emp_list, name='emp_list'),
+    path('insert.ajax', views.insert_ajax, name='insert.ajax'),
 ]

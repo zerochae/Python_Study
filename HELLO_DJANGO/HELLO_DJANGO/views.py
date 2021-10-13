@@ -1,3 +1,4 @@
+from django.http.response import JsonResponse
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -42,5 +43,20 @@ def emp_list(request) :
     }
 
     return render(request,"emp_list.html",data)
+
+def insert_ajax(request):
+    de = DaoEmp()
+    emp_id = request.POST['emp_id']
+    emp_name = request.POST['emp_name']
+    tel = request.POST['tel']
+    address = request.POST['address']
+    cnt = de.myinsert(emp_id,emp_name,tel,address);
+    msg = "ng"
+    if cnt > 0 :
+        msg = "ok"
+    print(cnt)
+    print(msg)
+    myjson = {'msg' : msg}
+    return JsonResponse(myjson)
 
 
