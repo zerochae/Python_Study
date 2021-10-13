@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from dao_emp import DaoEmp
+
 
 # Create your views here.
 
@@ -31,5 +33,12 @@ def myforward(request):
     }
 
     return render(request,"myforward.html",data)
+
+def emp_list(request) :
+    de = DaoEmp()
+    data = {
+        'list' : de.myselect() 
+    }
+    return render(request,"emp_list.html",data)
 
 

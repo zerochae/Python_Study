@@ -12,7 +12,7 @@ class DaoEmp :
             port = 3305
         )
 
-        self.cur = self.conn.cursor()
+        self.cur = self.conn.cursor(pymysql.cursors.DictCursor)
 
     def myselect(self) :
 
@@ -61,9 +61,9 @@ class DaoEmp :
 
 if __name__ == '__main__':
     de = DaoEmp()
-    # lst = de.myselect()
-    # print(lst)
+    lst = de.myselect()
+    print(lst)
 
     # cnt = de.myinsert("5","5","5","5")
-    cnt = de.myupdate("5","6","6","6")
-    print(cnt)
+    # cnt = de.myupdate("5","6","6","6")
+    # print(cnt)

@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-import myapp.views
-
+from HELLO_DJANGO import views
+  
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    # path('',myapp.views.home, name='index'),
-    # path('',myapp.views.home, name='home'),
-    path('myforward', myapp.views.myforward, name='myforword' ),
-    path('emp_list',myapp.views.DaoEmp)
+    # path('hello', views.index, name='hello'),
+    # path('param1', views.param1, name='param1'),
+    # path('param2', views.param2, name='param2'),
+    # path('myforward', views.myforward, name='myforward'),
+    path('emp_list', views.emp_list, name='emp_list'),
 ]
