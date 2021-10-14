@@ -15,16 +15,22 @@ response = requests.get(url)
 if response.status_code == 200 :
     html = response.text
     soup = BeautifulSoup(html,"html.parser")
-    tds = soup.select('tr')
-    # for td in tds :
 
+
+    print("---------------------------------------")
+    print("방법 1")
+    tds = soup.select('tr')
     for i in range (1,3) :
         print(tds[i].text)
+
+    print("---------------------------------------")
+    print("방법 2")
     
     tables = soup.select('table')
-    tables[0].select()
+    trs= tables[0].select('tr')
 
-# with open("http://127.0.0.1:8000/sawon_list") as fp:
-#     soup = BeautifulSoup(fp)
-# soup = BeautifulSoup("<html>data</html>")
-
+    for index,tr in enumerate(trs):
+        if index > 0 :
+            tds = tr.select('td')
+            print(tds[1].text, tds[2].text, tds[3].text)
+    print("---------------------------------------")

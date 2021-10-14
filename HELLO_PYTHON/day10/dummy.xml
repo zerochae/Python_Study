@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Naver Open API - movie ::'인디아나존스'</title>
+        <link>https://search.naver.com</link>
+        <description>Naver Search Result</description>
+        <lastBuildDate>Thu, 14 Oct 2021 11:10:19 +0900</lastBuildDate>
+        <total>9</total>
+        <start>1</start>
+        <display>9</display>
+        <item>
+            <title>&lt;b&gt;인디아나 존스&lt;/b&gt; 5</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=74031</link>
+            <image></image>
+            <subtitle>Indiana Jones 5</subtitle>
+            <pubDate>2020</pubDate>
+            <director>제임스 맨골드|</director>
+            <actor>해리슨 포드|</actor>
+            <userRating>9.51</userRating>
+        </item>
+        <item>
+            <title>플리즈 돈 유 즈 더 포스: &lt;b&gt;인디아나 존스&lt;/b&gt; vs. 다스 베이더</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=113006</link>
+            <image>https://ssl.pstatic.net/imgmovie/mdi/mit110/1130/113006_P01_155001.jpg</image>
+            <subtitle>Please Don&apos;t Use The Force: Indiana Jones vs. Darth Vader</subtitle>
+            <pubDate>2013</pubDate>
+            <director>패트릭 보이빈|</director>
+            <actor></actor>
+            <userRating>0.00</userRating>
+        </item>
+        <item>
+            <title>&lt;b&gt;인디아나 존스&lt;/b&gt;: 크리스탈 해골의 왕국</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=34521</link>
+            <image>https://ssl.pstatic.net/imgmovie/mdi/mit110/0345/C4521-01.jpg</image>
+            <subtitle>Indiana Jones And The Kingdom Of The Crystal Skull</subtitle>
+            <pubDate>2008</pubDate>
+            <director>스티븐 스필버그|</director>
+            <actor>해리슨 포드|케이트 블란쳇|카렌 알렌|샤이아 라보프|레이 윈스턴|</actor>
+            <userRating>7.45</userRating>
+        </item>
+        <item>
+            <title>영 &lt;b&gt;인디아나 존스&lt;/b&gt; - 악마의 얼굴</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=30728</link>
+            <image></image>
+            <subtitle>The Adventures Of Young Indiana Jones: Masks Of Evil</subtitle>
+            <pubDate>1999</pubDate>
+            <director>딕 마스|마이크 뉴웰|</director>
+            <actor>숀 패트릭 프레너리|캐서린 버틀러|</actor>
+            <userRating>7.50</userRating>
+        </item>
+        <item>
+            <title>영 &lt;b&gt;인디아나 존스&lt;/b&gt; - 공작의 눈</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=17031</link>
+            <image>https://ssl.pstatic.net/imgmovie/mdi/mit110/0170/17031_P01_133309.jpg</image>
+            <subtitle>The Young Indiana Jones: Treasure Of The Peacock&apos;s Eye</subtitle>
+            <pubDate>1994</pubDate>
+            <director>칼 슐츠|</director>
+            <actor>숀 패트릭 프레너리|로니 쿠테어|아드리안 에드몬슨|제인 애시보른|</actor>
+            <userRating>9.40</userRating>
+        </item>
+        <item>
+            <title>영 &lt;b&gt;인디아나 존스&lt;/b&gt;</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=27858</link>
+            <image>https://ssl.pstatic.net/imgmovie/mdi/mit110/0278/27858_P37_132844.jpg</image>
+            <subtitle>The Young Indiana Jones Chronicles</subtitle>
+            <pubDate>1992</pubDate>
+            <director>빅 암스트롱|빌 어거스트|벤 버트|데이비드 헤어|조 &lt;b&gt;존스&lt;/b&gt;톤|테리
+                &lt;b&gt;존스&lt;/b&gt;|딕 마스|피터 맥도널드|질리스 맥키넌|르네 만조르|시드 맥카트니|디파 메타|개빈 밀라|마이크
+                뉴웰|니콜라스 뢰그|칼 슐츠|마이클 슐츠|사이먼 윈서|로버트 영|</director>
+            <actor>숀 패트릭 프레너리|조지 홀|로니 쿠테어|마가렛 타이잭|로이드 오웬|코리 캐리어|루스 드 소사|</actor>
+            <userRating>8.18</userRating>
+        </item>
+        <item>
+            <title>&lt;b&gt;인디아나 존스&lt;/b&gt; - 최후의 성전</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=10035</link>
+            <image>https://ssl.pstatic.net/imgmovie/mdi/mit110/0100/A0035-00.jpg</image>
+            <subtitle>Indiana Jones And The Last Crusade</subtitle>
+            <pubDate>1989</pubDate>
+            <director>스티븐 스필버그|</director>
+            <actor>해리슨 포드|</actor>
+            <userRating>9.05</userRating>
+        </item>
+        <item>
+            <title>&lt;b&gt;인디아나 존스&lt;/b&gt;</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=10034</link>
+            <image>https://ssl.pstatic.net/imgmovie/mdi/mit110/0100/A0034-00.jpg</image>
+            <subtitle>Indiana Jones And The Temple Of Doom</subtitle>
+            <pubDate>1984</pubDate>
+            <director>스티븐 스필버그|</director>
+            <actor>해리슨 포드|케이트 캡쇼|</actor>
+            <userRating>9.05</userRating>
+        </item>
+        <item>
+            <title>레이더스</title>
+            <link>https://movie.naver.com/movie/bi/mi/basic.nhn?code=10033</link>
+            <image>https://ssl.pstatic.net/imgmovie/mdi/mit110/0100/A0033-00.jpg</image>
+            <subtitle>Raiders Of The Lost Ark</subtitle>
+            <pubDate>1981</pubDate>
+            <director>스티븐 스필버그|</director>
+            <actor>해리슨 포드|카렌 알렌|폴 프리먼|</actor>
+            <userRating>8.97</userRating>
+        </item>
+    </channel>
+</rss>
