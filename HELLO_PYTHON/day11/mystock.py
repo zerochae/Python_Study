@@ -3,7 +3,7 @@ import urllib.request
 import urllib.parse
 import requests
 from datetime import datetime
-
+import time
 from daoStock import StockDao
 
 
@@ -14,9 +14,11 @@ from daoStock import StockDao
 
 url = 'https://vip.mk.co.kr/newSt/rate/item_all.php?koskok=KOSPI&orderBy=upjong'
 
+
+
 response = requests.get(url)
 # response.encoding("utf-8");
-s_time = datetime.today().strftime('%Y%m%d.%H%M')
+s_time = datetime.today().strftime('%Y%m%d.%H%M%S')
 
 if response.status_code == 200 :
     html = urllib.request.urlopen(url).read().decode('cp949', 'ignore')
@@ -33,9 +35,7 @@ if response.status_code == 200 :
 
         # se.insert(s_name,s_code,s_price,s_time)
 
-    
     se.mycommit()
-
 
 
 

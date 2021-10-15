@@ -13,8 +13,26 @@ class StockDao :
         )
 
         self.cur = self.conn.cursor(pymysql.cursors.DictCursor)
+    def select(self,s_name) :
 
-    def insert(self,s_name,s_code,price,g_time) :
+        arr = []
+
+        sql = f"""
+        
+            select price from stock where s_name = '{s_name}'
+        """
+
+        self.cur.execute(sql)
+
+        result = self.cur.fetchall()
+
+        for i in result :
+            print(i['price'])
+            arr.append(i['price'])
+
+        return arr
+
+    def insert(self,s_code,s_name,price,g_time) :
 
         sql ="""
         
