@@ -20,7 +20,7 @@ for i,j in enumerate(name) :
     if i == len(name)-1 : break
 
     zs = se.selectPrice(name[i])
-    xs = np.zeros(len(zs))
+    xs = np.zeros(len(zs))+i
     ys = list(range(0,len(zs)))
     ax.plot(xs,ys,zs)
 

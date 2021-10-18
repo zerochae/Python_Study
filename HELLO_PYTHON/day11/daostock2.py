@@ -21,29 +21,29 @@ class StockDao2:
         arr = []
 
         sql = """
-        
-        SELECT `COLUMN_NAME` 
-        FROM `INFORMATION_SCHEMA`.`COLUMNS` 
-        WHERE `TABLE_SCHEMA`='_stock_old' 
+
+        SELECT `COLUMN_NAME`
+        FROM `INFORMATION_SCHEMA`.`COLUMNS`
+        WHERE `TABLE_SCHEMA`='_stock_old'
         AND `TABLE_NAME`='stock_sync_0121';
-        
+
         """
 
         self.cur.execute(sql)
 
         result = self.cur.fetchall()
 
-        for i in result :
+        for i in result:
             arr.append(i['COLUMN_NAME'])
 
         return arr
-    
-    def selectPrice(self,name) :
+
+    def selectPrice(self, name):
 
         arr = []
 
         sql = f"""
-        
+
         SELECT {name} FROM stock_sync_0121
 
         """
@@ -52,25 +52,35 @@ class StockDao2:
 
         result = self.cur.fetchall()
 
-        for i in result :
+        for i in result:
             arr.append(i[name])
-        
-        value = arr[0]
 
-        for i,j in enumerate(arr) :
-            if arr[i] == 0 :
-                arr[i] = 0.99999999
-            else :
-                arr[i] /= value
+        for j in arr:
+            # if arr[0] == 0:
+            #     j = 0.98
+            # else:
+            j /= arr[0]
 
         return arr
 
-if __name__ == '__main__':
-    sd = StockDao2()
+    def myselect100(self, name):
 
-    lst = sd.selectName()
-
-    lst2 = sd.selectPrice('s000020')
-
-    print(lst2)
-    
+        priceArr = []
+        sql = f"""
+                select {name} from stock_sync_0121
+            """
+        self.cur.execute(sql)
+        rows = self.cur.fetchall()
+        for i in rows:
+            priceArr.append(i[name])
+            
+        returnArr = []
+        for i,j in enumerate(priceArr):
+            
+            if i == len(priceArr)-1 : break
+            
+            if priceArr[0] == 0:
+                returnArr.append(0.98)
+            else:
+                returnArr.append(j / priceArr[0])
+        return returnArr   
